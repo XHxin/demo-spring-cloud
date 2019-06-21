@@ -12,12 +12,19 @@ spring:
    password: aimashi620
 
 
-# security:
-#   user:
-#     name: admin
-#     password: nelson
-#     roles: -USER #授权角色
-
 logging:
   level:
     com.nelson.org.mapper: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: demo-provider-product
+    prefer-ip-address: true
+
+info:
+  app.name: microcloud-provider-product
+  company.name: nelson
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$
