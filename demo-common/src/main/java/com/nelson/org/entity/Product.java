@@ -6,7 +6,6 @@ package com.nelson.org.entity;
  * @todo
  */
 public class Product {
-    private String name;
     private Long productId;
     private String productName;
     private String productDesc;
